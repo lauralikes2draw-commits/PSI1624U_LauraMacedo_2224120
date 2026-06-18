@@ -50,3 +50,80 @@ Cores suaves em tons rosa/branco,
 Timer para reenvio de código,
 Estrutura semelhante a aplicações modernas,
 Integração inicial com a lógica do sistema e preparação para conexão com a base de dados SQL Server.
+
+### 05/05
+
+-Criacao do layout do Dashboard dos Adminstradores, TopBar e SideBar.
+
+### 07/05 
+
+-Continuacao do layout do Dashboard dos Adminstradores, a tela do principal do Dashboard, Panels , etc.
+
+-Programacao da tela 
+
+-Criacao do SQL (Base de Dados)
+
+### 12/05
+
+-Layout da criacao da tela de Clientes dos Adminstradores.
+
+
+### 14/05
+
+-Layout da criacao da tela de Marcacoes dos Adminstradores.
+
+-Layout da criacao da tela de Profissionais dos Adminstradores.
+
+### 19/05
+
+-Layout da criacao da tela de Servicos dos Adminstradores.
+
+-Layout da criacao da tela de Faturacao dos Adminstradores.
+
+### 21/05
+
+-Layout da criacao da tela de DashBoard dos Clientes.
+
+-Layout da criacao da tela de Avaliacoes dos Clientes.
+
+### 26/05
+
+-Layout da criacao da tela de Marcacoes dos Clientes.
+
+-Layout da criacao da tela de Faturacao dos Clientes.
+
+### 28/05
+
+-Layout da criacao da tela de Marcacoes das Profissionais.
+
+-Layout da criacao da tela de Faturacao dos Profissionais.
+
+
+### 02/06
+
+-Layout da criacao da tela de Faturacao dos Profissionais.
+
+### 04/06
+
+
+-Programacao da tela de Marcacoes das Profissionais.
+
+-Programacao da tela de Faturacao dos Profissionais.
+
++SQL
+
+### 09/06
+
+-Programacao da tela de Dashboard das Profissionais.
+
+-Layout da criacao da tela de Recibo das Profissionais.
+
+-Layout da criacao da tela de Marcacao  dos Profissionais.
+
+-Programacao
+
++SQL
+
+### 11/06
+
+
