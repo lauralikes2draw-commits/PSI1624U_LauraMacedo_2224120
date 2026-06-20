@@ -118,12 +118,26 @@ Integração inicial com a lógica do sistema e preparação para conexão com a
 
 -Layout da criacao da tela de Recibo das Profissionais.
 
--Layout da criacao da tela de Marcacao  dos Profissionais.
-
 -Programacao
 
 +SQL
 
 ### 11/06
+
+- Continuacao programacao das telas das profissionais.
+
+### 16/06
+
+-Faltei mas continuei a programacao(parte logica) das profissionais e fiz metade da logica das telas das clientes.
+
+### 18/06
+
+- Resto da logica das telas das clientes
+
+### 20/06
+
+
+
+  
 
 
