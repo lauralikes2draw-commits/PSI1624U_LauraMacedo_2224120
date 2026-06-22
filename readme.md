@@ -136,6 +136,20 @@ Integração inicial com a lógica do sistema e preparação para conexão com a
 
 ### 20/06
 
+-Fiz parte logica das telas da admin.
+
+### 21/06
+
+-Continuei a parte logica da administracao.
+
+-Testes para ver como esta ficando se tava tudo okay.
+
+### 22/06
+
+-Mais testes 
+
+-Relatorio Final
+
 
 
   
