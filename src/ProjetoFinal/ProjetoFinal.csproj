@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF89CF5C-9538-482B-9A67-6E2B1F51ED13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoFinal</RootNamespace>
+    <AssemblyName>ProjetoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminRepository.cs" />
+    <Compile Include="AdminSharedUi.cs" />
+    <Compile Include="AdminDialogos.cs" />
+    <Compile Include="AvaliacoesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvaliacoesCliente.Designer.cs">
+      <DependentUpon>AvaliacoesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteRepository.cs" />
+    <Compile Include="ClienteSharedUi.cs" />
+    <Compile Include="NovaMarcacaoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalheMarcacaoClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientesAdmin.Designer.cs">
+      <DependentUpon>ClientesAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="ProfissionalRepository.cs" />
+    <Compile Include="ProfissionalSharedUi.cs" />
+    <Compile Include="NovaMarcacaoProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovaMarcacaoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReciboFaturaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardProfissional.Designer.cs">
+      <DependentUpon>DashboardProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturacaoProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturacaoProfissional.Designer.cs">
+      <DependentUpon>FaturacaoProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturasAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturasAdmin.Designer.cs">
+      <DependentUpon>FaturasAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturasClientes.Designer.cs">
+      <DependentUpon>FaturasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturasProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturasProfissional.Designer.cs">
+      <DependentUpon>FaturasProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminPrinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminPrinc.Designer.cs">
+      <DependentUpon>FormAdminPrinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientePrinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientePrinc.Designer.cs">
+      <DependentUpon>FormClientePrinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCriarConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCriarConta.Designer.cs">
+      <DependentUpon>FormCriarConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formprofissionalprinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formprofissionalprinc.Designer.cs">
+      <DependentUpon>Formprofissionalprinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecuperarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecuperarSenha.Designer.cs">
+      <DependentUpon>FormRecuperarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarcacoesAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarcacoesAdmin.Designer.cs">
+      <DependentUpon>MarcacoesAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinhasMarcacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinhasMarcacoes.Designer.cs">
+      <DependentUpon>MinhasMarcacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfissionaisAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfissionaisAdmin.Designer.cs">
+      <DependentUpon>ProfissionaisAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicosAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicosAdmin.Designer.cs">
+      <DependentUpon>ServicosAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioLogado.cs" />
+    <EmbeddedResource Include="AvaliacoesCliente.resx">
+      <DependentUpon>AvaliacoesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientesAdmin.resx">
+      <DependentUpon>ClientesAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardProfissional.resx">
+      <DependentUpon>DashboardProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturacaoProfissional.resx">
+      <DependentUpon>FaturacaoProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturasAdmin.resx">
+      <DependentUpon>FaturasAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturasClientes.resx">
+      <DependentUpon>FaturasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturasProfissional.resx">
+      <DependentUpon>FaturasProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminPrinc.resx">
+      <DependentUpon>FormAdminPrinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientePrinc.resx">
+      <DependentUpon>FormClientePrinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCriarConta.resx">
+      <DependentUpon>FormCriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecuperarSenha.resx">
+      <DependentUpon>FormRecuperarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcacoesAdmin.resx">
+      <DependentUpon>MarcacoesAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinhasMarcacoes.resx">
+      <DependentUpon>MinhasMarcacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfissionaisAdmin.resx">
+      <DependentUpon>ProfissionaisAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServicosAdmin.resx">
+      <DependentUpon>ServicosAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 28, 2026, 08_23_34 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 153020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 153201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 155842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 155947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 1559471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 160942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 161420.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 161501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-29 161547.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 29, 2026, 04_32_40 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 29, 2026, 04_32_40 PM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Apr 29, 2026, 04_36_37 PM %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-30 142557.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-30 161653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-30 162127.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-30 162428.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-04-30 162505.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-05-12 145128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dog-house-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dog-house-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-outline-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-outline-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spa-mask-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spa-mask-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-page-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-decline-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-more-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-doorbell-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-account-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-test-account-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-plus-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-euro-money-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-euro-money-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-rating-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-tear-off-calendar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bell-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-doorbell-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-doorbell-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bell-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bell-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-check-mark-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-x-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-profile-48 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-week-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-euro-money-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-import-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-plane-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circle-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circle-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-beautician-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpeza-de-pele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-48 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-four-squares-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-mark-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-window-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-chart-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limpeza-de-pele %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-number-1-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-2-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-circled-3-c-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-number-4-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-5-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-number-4-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-5-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paid-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paid-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-card-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-magnetic-card-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-discount-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wallet-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 9, 2026, 04_56_18 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 11, 2026, 01_16_38 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 11, 2026, 01_36_43 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gift-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-star-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-building-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-nail-polish-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hourglass-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paycheque-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-receipt-euro-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image Jun 22, 2026, 10_34_26 AM.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
