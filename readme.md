@@ -152,6 +152,10 @@ Integração inicial com a lógica do sistema e preparação para conexão com a
 
 -Organizacao do github
 
+### 23/06
+
+-Fiz Manual de instrucao do utilizador.
+
 
 
   
