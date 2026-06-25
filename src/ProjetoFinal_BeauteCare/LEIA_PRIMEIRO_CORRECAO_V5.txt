@@ -1,0 +1,19 @@
+Correção V5
+
+Esta versão foi gerada em uma pasta com nome novo: ProjetoFinal_V5_FINAL.
+Abra o arquivo ProjetoFinal.sln desta pasta, não abra a pasta antiga.
+
+Nos arquivos abaixo, a linha antiga abaixo não existe mais:
+fechar.Click += delegate { DialogResult = DialogResult.Cancel; Close(); };
+
+Arquivos revisados:
+- NovaMarcacaoAdmin.cs / NovaMarcacaoAdmin.Designer.cs
+- NovaMarcacaoCliente.cs / NovaMarcacaoCliente.Designer.cs
+- NovaMarcacaoProfissional.cs / NovaMarcacaoProfissional.Designer.cs
+- ReciboFaturaForm.cs / ReciboFaturaForm.Designer.cs
+- DetalheMarcacaoClienteForm.cs / DetalheMarcacaoClienteForm.Designer.cs
+
+Para confirmar:
+1. Clique duas vezes em VERIFICAR_V5.bat.
+2. Se aparecer [OK], abra ProjetoFinal.sln.
+3. Se o Visual Studio ainda mostrar a mesma mensagem antiga, clique duas vezes na mensagem e confira o caminho do arquivo aberto. O caminho precisa conter ProjetoFinal_V5_FINAL.

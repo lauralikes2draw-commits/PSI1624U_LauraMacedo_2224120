@@ -1,0 +1,13 @@
+Correção V7 - lógica de avaliações
+
+Alterações feitas sem mexer no layout:
+1. Ao entrar no sistema, as marcações do cliente que já passaram do horário final são atualizadas para Concluído.
+2. A avaliação pendente só aparece quando DataMarcacao + Hora + DuracaoMinutos já passou.
+3. A avaliação enviada atualiza a média da profissional em Usuarios.Avaliacao.
+4. A avaliação enviada atualiza a média do serviço em Servicos.Avaliacao.
+5. As notas da tabela Avaliacoes foram ajustadas para DECIMAL(3,2), permitindo valores como 4.5.
+
+Para abrir:
+- Execute VERIFICAR_AVALIACAO_V7.bat.
+- Abra ProjetoFinal.sln.
+- Rode Clean Solution e Rebuild Solution.
