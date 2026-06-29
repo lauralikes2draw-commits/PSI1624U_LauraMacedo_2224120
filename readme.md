@@ -160,6 +160,10 @@ Integração inicial com a lógica do sistema e preparação para conexão com a
 
 -Video da apresentacao do projeto
 
+### 29/06
+
+-Revisao e entrega
+
 
 
   
