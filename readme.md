@@ -156,6 +156,10 @@ Integração inicial com a lógica do sistema e preparação para conexão com a
 
 -Fiz Manual de instrucao do utilizador.
 
+### 27/06
+
+-Video da apresentacao do projeto
+
 
 
   
