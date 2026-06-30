@@ -8,7 +8,7 @@ namespace ProjetoFinal
 {
     internal class UsuarioLogado
     {
-        //serve para guardar os dados do login
+        
         public static int Id { get; set; }
         public static string Nome { get; set; }
         public static string Email { get; set; }

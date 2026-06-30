@@ -13,13 +13,13 @@ namespace ProjetoFinal
         private static extern bool SetProcessDPIAware();
 
        
-        [STAThread] //melhorar a qualidade
+        [STAThread] 
         static void Main()
         {
-            try { SetProcessDPIAware(); } catch { }//melhorrar a qualidade
+            try { SetProcessDPIAware(); } catch { } 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());//fazer com que o login corra
+            Application.Run(new FormLogin());
         }
     }
 }
