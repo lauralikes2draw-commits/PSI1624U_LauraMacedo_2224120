@@ -36,8 +36,6 @@ O projeto foi desenvolvido no âmbito da disciplina de Programação (PSI16), te
 
 A aplicação utiliza a base de dados **BeauteCareDB**, sendo disponibilizado no projeto o script SQL para criação da base de dados.
 
-## Autora
-
 **Laura Macedo**  
 Curso Profissional Técnico de Gestão e Programação de Sistemas Informáticos  
 Ano Letivo 2025/2026
